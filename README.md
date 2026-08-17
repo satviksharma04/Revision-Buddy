@@ -1,51 +1,54 @@
 # Revision Buddy 📚
 
-> AI-powered study companion that turns your study material into concise summaries, quizzes, and flashcards.
+> An AI-powered study companion that transforms study material into concise summaries, quizzes, and flashcards.
 
-Revision Buddy is a full-stack MERN application that helps students revise more effectively using Google's Gemini API.
-
-Users can either enter a topic or upload a PDF and choose what they want to generate — **Summary, Quiz, Flashcards, or all three**.
+**Revision Buddy** is a full-stack MERN application designed to make revision faster and more effective. Users can enter a topic or upload a PDF, choose the type of revision material they need, and generate it using Google's Gemini API.
 
 ---
 
 ## ✨ Features
 
-- 🔐 **User Authentication**
-  - Register and login with JWT-based authentication
-  - Password hashing using bcrypt
+### 🔐 Authentication
+- User registration and login
+- JWT-based authentication
+- Secure password hashing with bcrypt
+- Protected application routes
 
-- 📄 **PDF Learning Material**
-  - Upload study PDFs
-  - Extract text from uploaded documents
-  - Generate revision material from the extracted content
+### 📄 PDF-Based Revision
+- Upload study PDFs
+- Extract text from uploaded documents
+- Generate revision material directly from the extracted content
 
-- 🧠 **AI-Powered Revision**
-  - Generate concise summaries
-  - Generate 10-question multiple-choice quizzes
-  - Generate 10 flashcards
-  - Generate any combination of the three
+### 🧠 AI-Powered Learning
+- Generate concise **summaries**
+- Generate **10-question quizzes**
+- Generate **10 flashcards**
+- Generate any combination of Summary, Quiz, and Flashcards
+- Uses Google Gemini API for content generation
 
-- 📝 **Quiz Mode**
-  - Multiple-choice questions
-  - Instant answer feedback
-  - Explanations for answers
-  - Randomized answer options
-  - Score and percentage calculation
-  - Retry quiz option
+### 📝 Quiz Mode
+- Multiple-choice questions with four options
+- Randomized answer positions
+- Instant answer feedback
+- Explanations for answers
+- Score and percentage calculation
+- Retry quiz functionality
+- Identifies topics that need further revision
 
-- 🎯 **Revision Suggestions**
-  - Identifies topics associated with incorrect answers
-  - Shows areas that need further revision
+### 🎯 Revision Suggestions
+After completing a quiz, Revision Buddy analyzes incorrect answers and highlights the topics that should be revised again.
 
-- 🗂️ **Topic-Based Revision**
-  - Generate revision material directly from a topic without uploading a PDF
+### 🗂️ Topic-Based Revision
+Generate revision material directly from a topic without uploading a document.
 
-- 👤 **Simple Profile**
-  - Displays basic user information
+### 👤 Simple Profile
+- View basic user information
+- Lightweight profile experience without unnecessary complexity
 
-- 📱 **Responsive UI**
-  - Clean and minimal interface
-  - Works across desktop and mobile screens
+### 📱 Responsive Interface
+- Clean and minimal UI
+- Responsive across desktop and mobile devices
+- Simple learning-focused experience
 
 ---
 
@@ -71,7 +74,7 @@ Users can either enter a topic or upload a PDF and choose what they want to gene
 - bcrypt
 - Multer
 
-### AI & Processing
+### AI & Document Processing
 
 - Google Gemini API
 - PDF text extraction
@@ -81,44 +84,33 @@ Users can either enter a topic or upload a PDF and choose what they want to gene
 ## 🏗️ Application Architecture
 
 ```text
-                    Revision Buddy
-                          │
-             ┌────────────┴────────────┐
-             │                         │
-        React Frontend            Express Backend
-             │                         │
-             │                    REST API
-             │                         │
-             │              ┌──────────┴──────────┐
-             │              │                     │
-             │          MongoDB              Gemini API
-             │              │                     │
-             │              │              AI Generation
-             │              │                     │
-             └──────────────┴─────────────────────┘
-                            │
-                    Revision Material
-                            │
-              ┌─────────────┼─────────────┐
-              ↓             ↓             ↓
-           Summary         Quiz       Flashcards
+                           Revision Buddy
+                                │
+                 ┌──────────────┴──────────────┐
+                 │                             │
+          React Frontend                Express Backend
+                 │                             │
+                 │                         REST API
+                 │                             │
+                 │              ┌──────────────┴──────────────┐
+                 │              │                             │
+                 │          MongoDB                     Gemini API
+                 │              │                             │
+                 │              │                      AI Generation
+                 │              │                             │
+                 └──────────────┴─────────────────────────────┘
+                                │
+                         Revision Material
+                                │
+                    ┌───────────┼───────────┐
+                    ↓           ↓           ↓
+                 Summary      Quiz      Flashcards
 
+---
 
-##🔮 Future Improvements
+### 👨‍💻 Author
 
-Possible future improvements include:
-
-Better AI-generated topic detection
-Difficulty levels for quizzes
-More detailed performance analytics
-Support for additional document formats
-Personalized revision recommendations
-Improved quiz question generation
-
-
-##👨‍💻 Author
-
-Satvik Sharma
+**Satvik Sharma**
 
 B.Tech — Electrical Engineering
 National Institute of Technology, Hamirpur
