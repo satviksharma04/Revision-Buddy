@@ -112,5 +112,5 @@ Generate revision material directly from a topic without uploading a document.
 
 **Satvik Sharma**
 
-B.Tech — Electrical Engineering
-National Institute of Technology, Hamirpur
+- B.Tech — Electrical Engineering
+- National Institute of Technology, Hamirpur
