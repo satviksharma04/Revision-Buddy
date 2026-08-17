@@ -105,7 +105,7 @@ Generate revision material directly from a topic without uploading a document.
                     ┌───────────┼───────────┐
                     ↓           ↓           ↓
                  Summary      Quiz      Flashcards
-
+```
 ---
 
 ### 👨‍💻 Author
