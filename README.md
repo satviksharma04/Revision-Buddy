@@ -104,7 +104,7 @@ Users can either enter a topic or upload a PDF and choose what they want to gene
            Summary         Quiz       Flashcards
 
 
-🔮 Future Improvements
+##🔮 Future Improvements
 
 Possible future improvements include:
 
@@ -114,7 +114,9 @@ More detailed performance analytics
 Support for additional document formats
 Personalized revision recommendations
 Improved quiz question generation
-👨‍💻 Author
+
+
+##👨‍💻 Author
 
 Satvik Sharma
 
