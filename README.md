@@ -2,6 +2,10 @@
 
 > An AI-powered study companion that transforms study material into concise summaries, quizzes, and flashcards.
 
+### 🚀 Live Demo
+
+👉 **[Try Revision Buddy](https://revision-buddy-gamma.vercel.app/)**
+
 **Revision Buddy** is a full-stack MERN application designed to make revision faster and more effective. Users can enter a topic or upload a PDF, choose the type of revision material they need, and generate it using Google's Gemini API.
 
 ---
